@@ -50,9 +50,49 @@ class _Pertemuan5State extends State<Pertemuan5> {
                       setState(() {
                         selectedRadio = value.toString();
                       });
-                    })
+                    }),
+                Text('Laki-Laki'),
+                Radio(
+                    value: 'Perempuan',
+                    groupValue: selectedRadio,
+                    onChanged: (value) {
+                      setState(() {
+                        selectedRadio = value.toString();
+                      });
+                    }),
+                Text('Perempuan'),
               ],
-            )
+            ),
+            SizedBox(height: 20,),
+            Text('Hobi:'),
+            CheckboxListTile(
+                title: Text('Olahraga'),
+                value: olahraga,
+                onChanged: (Value) {
+                  setState(() {
+                    olahraga = Value!;
+                  });
+                }),
+            CheckboxListTile(
+                title: Text('Seni'),
+                value: seni,
+                onChanged: (Value) {
+                  setState(() {
+                    seni = Value!;
+                  });
+                }),
+            SizedBox(
+              height: 20,
+            ),
+            SwitchListTile(
+
+                title: Text('Lulus'),
+                value: switchValue,
+                onChanged: (value) {
+                  setState(() {
+                    switchValue = value;
+                  });
+                })
           ],
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:aslab_travel/latihanmodul/pertemuan4.dart';
 import 'package:aslab_travel/latihanmodul/pertemuan5.dart';
+import 'package:aslab_travel/screens/landingpage.dart';
 import 'package:aslab_travel/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class TravelApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Pertemuan5(),
+      home: LandingPageOne(),
     );
   }
 }
